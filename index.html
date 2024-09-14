@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Resume</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1><span>Shareable Resume</span> Builder By Muhammad Sami</h1>
+    <form id="resume">
+        <fieldset>
+            <legend>Personal Information</legend>
+            <label for="username">Username: </label>
+            <input type="text" id="username" name="username" required> <br>
+            <label for="name">Name: </label>
+            <input type="text" id="name" name="name" required> <br>
+
+            <label for="email">Email: </label>
+            <input type="email" id="email" name="email" required> <br>
+
+            <label for="phone">Phone: </label>
+            <input type="tel" id="phone" name="phone" required>
+        </fieldset>
+
+<fieldset>
+    <legend>Education</legend>
+    <label for="education">Education: </label>
+    <textarea name="education" id="education" rows="4" required></textarea> <br>
+</fieldset>        
+
+<fieldset>
+    <legend>Skills</legend>
+    <label for="skills">Skills: </label>
+    <textarea name="skills" id="skills" rows="4" required></textarea> <br>
+</fieldset>
+
+<fieldset>
+    <legend>Experience</legend>
+    <label for="experience">Experience: </label>
+    <textarea name="experience" id="experience" rows="4" required></textarea>
+</fieldset>
+<button type="submit" id="submit">Generate Resume</button>        
+    </form>
+
+    <div id="resume_output" contenteditable="true">
+
+    </div>
+
+    <br>
+
+    <div id="shareable-link-container" style="display: none">
+        <h2 style="text-align: center; text-decoration: double;">Shareable Link</h2>
+        <p style="text-align: center;">Here is your unique link to view or edit your resume:</p>
+        <a href="#" id="shareable-link" target="_blank"></a>
+        <br>
+        <button id="download-pdf"><b>Download as PDF</b></button>
+    </div>
+    <script src="index.js"></script>
+</body>
+</html>
